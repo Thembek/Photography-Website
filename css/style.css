@@ -1,0 +1,1776 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.01s;
+}
+
+#testimonials{
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+
+/*-- Splash page --*/
+.splash-page{
+    position: fixed;
+    display: grid;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.splash-page.display-none{
+    display: none;
+    z-index: -10px;
+}
+
+.name{
+    animation: flash linear 0.25s;
+}
+
+@keyframes flash{
+    0%{opacity: 1;}
+    50%{opacity: 0.1;}
+    100%{opacity: 1;}
+}
+
+.name h1{
+    font-size: 4.2em;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+.line{
+    width: 99%;
+    height: 1px;
+    background-color: #111;
+}
+
+.subject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-size: 1.3em;
+    font-weight: 300;
+    letter-spacing: 25px;
+}
+
+/*-- BUTTON UP --*/
+.button-up{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/*=================================================================================*/
+
+/*-- HOME PAGE --*/
+
+header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #fff;
+    border-bottom: grey solid 1px;
+    z-index: 1;
+}
+
+nav{
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;
+}
+
+ a span{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #000;
+}
+
+a #name-txt{
+    padding: 10px;
+    color: #000;
+    background-color: #fff;
+}
+
+a #skill-txt{
+    color: #fff;
+    padding: 10px;
+    background-color: #000;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul{
+    padding: 28px 0;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    padding: 5px 0;
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: gray;
+}
+.home-content{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.text{
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    cursor: context-menu;
+}
+
+.txt-content h2{
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+.lyn{
+    background-color: #000;
+    height: 1px;
+    width: 100%;
+}
+
+.txt-content h4{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 200;
+    letter-spacing: 25px;
+}
+
+.home-img{
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100vh;
+    right: 0;
+}
+
+.home-img img{
+    width: 100%;
+    height: 95%;
+}
+/*=================================================================================*/
+
+/*--- ABOUT ---*/
+.about-content{
+    width: 100%;
+    height: 100vh;
+    left: 5%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-img{
+    height: 750px;
+    width: 567px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.div-img img{
+    border-radius: 25px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div-outside-layer{
+    position: relative;
+    height: 451px;
+    width: 550px;
+    border-radius: 50px;
+    background-color: #000;
+}
+
+.outside-layer-style{
+    position: absolute;
+    top: 10%;
+    margin: 10px;
+    display: grid;
+    right: 0;
+}
+
+.circle{
+    width: 8px;
+    height: 8px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.bt-line{
+    position: absolute;
+    top: 100%;
+    height: 200px;
+    right: 45%;
+    border-right: 1px solid white;
+}
+
+.bt-num{
+    position: absolute;
+    height: 100%;
+    padding: 0;
+    top: 300px;
+    color: #fff;
+}
+
+.bt-num h1{
+    font-weight: 500;
+}
+
+.position-inside-layer{
+    margin: 10% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-layer{
+    position: absolute;
+    padding: 10px;
+    height: 330px;
+    width: 490px;
+    background-color: #fff;
+    cursor: context-menu;
+}
+
+.inside-layer h1{
+    text-align: center;
+    font-weight: 300;
+}
+
+.inside-layer p{
+    padding: 55px;
+    text-align: center;
+    font-size: 1.3rem;
+    
+}
+
+/*=================================================================================*/
+
+/*-- PORTFOLIO --*/
+.position{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 15%;
+    left: 25%;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.info{
+    position: relative;
+    display: flex;
+    top: -95%;
+    left: 0;
+    height: 90%;
+    width: 212px;
+    background-color: grey;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0.6;
+}
+
+.info-style{
+    flex: 1;
+}
+
+.info-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 25px 5px;
+}
+
+.info-line{
+    height: 29vh;
+    width: 1px;
+    background-color: #fff;
+    margin: 10px 8px;
+}
+
+.info-num h1{
+    color: #fff;
+    font-weight: 100;
+}
+
+.info-txt{
+    flex: 1;
+    cursor: context-menu;
+}
+
+.info-txt-pos{
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    width: 100%;
+}
+
+.info-txt-pos h1{
+    color: white;
+    font-size: 0.8rem;
+    margin: 75px 0;
+}
+
+.navbar-man{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manl-btn{
+    background-color: grey;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    opacity: 0.8;
+}
+
+.manl-btn:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.manl-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+#rd1:checked ~ .first{
+    margin-left: 0;
+}
+
+#rd2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#rd3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#rd4:checked ~ .first{
+    margin-left: -60%;
+}
+
+#rd5:checked ~ .first{
+    margin-left: -80%;
+}
+
+#rd6:checked ~ .first{
+    margin-left: -100%;
+}
+
+.port-end-style{
+    position: absolute;
+    top: -11%;
+    right: 27%;
+}
+
+.port-circles{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 50px 0;
+}
+
+.port-line{
+    height: 40vh;
+    width: 1px;
+    background-color: gray;
+    margin: 0 7px;
+}
+
+.port-num h1{
+    color: gray;
+    margin: 30px 0;
+    font-size: 1.9rem;
+    font-weight: 100;
+}
+
+/*=================================================================================*/
+
+/*-- TESTIMONIALS --*/
+
+.organize-container{
+    padding: 5px;
+}
+.tcontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tcard{
+    background-color: #C4C4C4;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 5%;
+}
+
+.card-1 i,
+.card-2 i,
+.card-3 i{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.name{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.refs{
+    text-decoration: none;
+    color: #fff;
+}
+
+.job{
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.testimon-style{
+    position: absolute;
+    right: 0;
+}
+
+.circleF{
+    width: 10px;
+    height: 10px;
+    margin: 25px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.testi-line{
+    position: absolute;
+    display: grid;
+    margin: 0 -3px;
+    background: gray;
+    height: 40vh;
+    border-right: 1px solid gray;
+    right: 55%;
+}
+
+.testi-num{
+    position: absolute;
+    bottom: -10%;
+    margin: -10px -12px;
+    font-size: 1.9rem;
+    color: gray;
+    text-align: center;
+}
+
+/*=================================================================================*/
+/*-- SERVICES --*/
+.srvc-lbl h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 100;
+    border-bottom: 1px solid gray;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: 100%;
+}
+
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.container .card .imgBx,
+.container .card .contentBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 5px;
+    object-fit: cover;
+}
+
+.container .card .contentBx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.3s;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 5px;
+    transition-delay: 0;
+    opacity: 0.4;
+}
+
+.container .card:hover .contentBx::before{
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+    transition-delay: 0s;
+}
+
+.container .card:hover .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .contentBx .content{
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    transition: 0.3s;
+    transform: translateX(-330px);
+    transition-delay: 0s;
+}
+
+.container .card:hover .contentBx .content{
+    transform: translateX(0px);
+    transition-delay: 0.5s;
+}
+
+.container .card .contentBx .content h3{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.container .card .contentBx .content a{
+    font-size: 1em;
+    line-height: 1.4em;
+    font-weight: 200;
+    margin-left: 35%;
+    opacity: 0.9;
+    color: #fff;
+}
+
+/*=================================================================================*/
+/*-- CONTACT --*/
+.contact-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.emblem-side{
+    flex: 1;
+}
+
+.form-side{
+    flex: 1;
+}
+
+.hb-sign-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.hb-sign{
+    position: absolute;
+    bottom: 50%;
+    left: 20%;
+}
+
+.hb-line{
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #000;
+}
+
+.hb-sign h1{
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 100;
+}
+
+.hb-sign h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 18px;
+}
+
+.form-side{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.form{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: 100%;
+    width: 80%;
+}
+
+.form h1{
+    font-weight: lighter;
+    font-size: 2.3rem;
+}
+form input{
+    color: #000;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    font-size: 1.3rem;
+}
+
+form textarea{
+    color: #000;
+    width: 100%;
+    height: 90px;
+    margin: 5px 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    font-size: 1.3rem;
+}
+
+form .message{
+    margin: 80px 0;
+}
+
+form button{
+    border: none;
+    outline: none;
+    height: 51px;
+    width: 40%;
+    margin-left: 30%;
+    background-color: rgb(165, 165, 165);
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.style-side{
+    position: absolute;
+    display: grid;
+    right: 0;
+}
+
+.info-side{
+    height: 30%;
+}
+
+.circleC{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.circleC img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.v-line{
+    position: absolute;
+    margin: 10px;
+    height: 55vh;
+    border-right: 1px solid grey;
+    right: 40%;
+}
+
+.cntct-num{
+    position: absolute;
+    color: grey;
+    bottom: -10%;
+    left: -7px;
+    font-size: 1.8rem;
+}
+
+/*=================================================================================*/
+
+/*==================== RESPONSIVE CODE ====================*/
+
+@media (max-width: 991px){
+
+    /*==================== HOME SECTION ====================*/
+    header{
+        flex-direction: column;
+    }
+
+    .home-content{
+        display: grid;
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-img{
+        width: 100%;
+        height: 60%;
+    }
+
+    /*==================== ABOUT SECTION ====================*/
+    .about-content{
+        width: 100%;
+        height: 100%;
+    }
+
+    .div-img{
+        width: 60%;
+        height: 60%;
+    }
+
+    .div-outside-layer{
+        opacity: 0.9;
+        width: 60%;
+    }
+
+    .inside-layer{
+        width: 90%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    /*==================== PORTFOLIO SECTION ====================*/
+    .position{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        top: 20%;
+        left: 5%;
+    }
+
+    .port-end-style{
+        display: none;
+    }
+
+
+     /*==================== TESTIMONIAL SECTION ====================*/
+     .organize-container{
+         position: relative;
+         left: -60px;
+     }
+
+     .testimon-style{
+         display: none;
+     }
+
+     /*==================== SERVICE SECTION ====================*/
+
+    .container .card{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+    }   
+
+    /*==================== CONTACT SECTION ====================*/
+    .contact-content{
+        width: 100%;
+        height: 100%;
+    }
+
+    .hb-sign-content{
+        left: 0;
+    }
+
+    .hb-sign h1{
+        font-size: 1.5rem;
+    }
+
+    .hb-sign h2{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 850px){
+    /*==================== HOME SECTION ====================*/
+    header{
+        display: none;
+    }
+
+    .text{
+        left: 10%;
+    }
+    
+    .txt-content{
+        width: 100%;
+    }
+
+    .txt-content h2{
+        left: 10%;
+        font-size: 3.2rem;
+    }
+
+    .down-btn{
+        position: relative;
+        height: 80px;
+        width: 80px;
+        bottom: 10%;
+        left: 50%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    .down-btn a{
+        position: absolute;
+        text-decoration: none;
+        left: 11px;
+        bottom: 10px;
+        animation: img linear 0.7s infinite;
+    }
+
+    @keyframes img{
+        0% {opacity: 1;}
+        50% {opacity: 0.5;}
+        100% {opacity: 1;}
+    }
+
+    .button-up{
+        display: none;
+    }
+
+    /*==================== ABOUT SECTION ====================*/
+    .about-content{
+        width: 100%;
+        height: 100%;
+    }
+
+    .div-img{
+        width: 30%;
+        height: 80%;
+    }
+
+    .div-outside-layer{
+        opacity: 0.9;
+        width: 60%;
+    }
+
+    .inside-layer{
+        width: 90%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+     /*==================== PORTFOLIO SECTION ====================*/
+    .position{
+        position: relative;
+        height: 100%;
+        width: 80%;
+        top: 20%;
+        left: 5%;
+    }
+
+    .slider{
+        width: 700px;
+        height: 500px;
+    }
+
+    .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+    }
+
+    /*==================== TESTIMONIAL SECTION ====================*/
+     .organize-container{
+         position: relative;
+         left: 5px;
+     }
+
+    .tcontainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .tcard{
+        background-color: #C4C4C4;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 5%;
+    }
+
+    .card-1 i,
+    .card-2 i,
+    .card-3 i{
+        font-size: 15px;
+        margin-bottom: 10px;
+        color: #111;
+    }
+
+    .name{
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .refs{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .job{
+        text-transform: uppercase;
+        opacity: 0.8;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    /*==================== CONTACT SECTION ====================*/
+
+    .hb-sign h1{
+        font-size: 1.2rem;
+    }
+
+    .hb-sign h2{
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+   
+}
+
+@media (max-width: 624px){
+
+    /*==================== HOME SECTION ====================*/
+    .splash-page{
+        width: 100%;
+    }
+
+    .name{
+        width: 100%;
+    }
+
+    .name h1{
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .name h3{
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    .text{
+        left: 10%;
+    }
+    
+    .txt-content{
+        width: 100%;
+    }
+
+    .txt-content h2{
+        left: 10%;
+        font-size: 2.7rem;
+    }
+
+
+     /*==================== ABOUT SECTION ====================*/
+    .about-content{
+        width: 100%;
+        height: 100%;
+    }
+
+    .div-img{
+        left: 0;
+        width: 30%;
+        height: 70%;
+    }
+
+    .div-outside-layer{
+        opacity: 0.8;
+        width: 60%;
+    }
+
+    .inside-layer{
+        width: 90%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+    }
+
+    /*==================== PORTFOLIO SECTION ====================*/
+    .position{
+        position: relative;
+        height: 100%;
+        width: 50%;
+        top: 20%;
+        left: 0;
+    }
+
+    .slider{
+        width: 600px;
+        height: 500px;
+    }
+
+    /*==================== CONTACT SECTION ====================*/
+
+    .hb-sign-content{
+        left: -50px;
+    }
+    .hb-sign h1{
+        font-size: 1.1rem;
+    }
+
+    .hb-sign h2{
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+}
+
+
+@media (max-width: 550px){
+    /*==================== HOME SECTION ====================*/
+    .home-img{
+        width: 100%;
+        height: 60%;
+    }
+    .txt-content h2{
+        font-size: 1.8rem;
+    }
+
+    .txt-content h4{
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+     /*==================== ABOUT SECTION ====================*/
+    .about-content{
+        top: 3%;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .div-img{
+        width: 100%;
+        height: 10%;
+        flex: start;
+    }
+
+    .div-img img{
+        width: 80%;
+    }
+
+    .div-outside-layer{
+        opacity: 0.9;
+        width: 60%;
+    }
+
+    .inside-layer{
+        width: 80%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+    }
+
+    .inside-layer h1,
+    .inside-layer p{
+        width: 100%;
+        font-size: 0.98rem;
+        margin: 0;
+        padding: 10px ;
+    }
+
+    /*==================== PORTFOLIO SECTION ====================*/
+    .position{
+        position: relative;
+        height: 100%;
+        width: 50%;
+        top: 20%;
+        left: 0;
+    }
+
+    .slider{
+        width: 530px;
+        height: 500px;
+    }
+
+    .slide img{
+        width: 600px;
+        height: 500px;
+        object-fit: cover;  
+    }
+
+    .navbar-man{
+        position: absolute;
+        width: 700px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manl-btn{
+        background-color: grey;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+        opacity: 0.8;
+    }
+
+    .container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    /*==================== SERVICES SECTION ====================*/
+
+    .container .card{
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin: 5px;
+    }  
+
+    .container .card .contentBx .content h3{
+        font-size: 1.2rem;
+    }
+
+    .container .card .contentBx .content a{
+        font-size: 0.9rem;
+        margin-left: -8%;
+    }
+
+
+    /*==================== TESTIMONIAL SECTION ====================*/
+     .organize-container{
+         position: relative;
+         left: 5px;
+     }
+
+    .tcontainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .img{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .card{
+        background-color: #C4C4C4;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 5%;
+    }
+
+    .card-1 i,
+    .card-2 i,
+    .card-3 i{
+        font-size: 10px;
+        margin-bottom: 10px;
+        color: #111;
+    }
+
+    .name{
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+    .refs{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .job{
+        text-transform: uppercase;
+        opacity: 0.8;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    /*==================== CONTACT SECTION ====================*/
+
+    .emblem-side{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 480px){
+    /*==================== HOME SECTION ====================*/
+    .home-img{
+        width: 100%;
+        height: 60%;
+    }
+
+    .text{
+        left: 10%;
+    }
+    .txt-content h2{
+        font-size: 1.3rem;
+    }
+
+    .txt-content h4{
+        text-align: center;
+        font-size: 0.8rem;
+        letter-spacing: 10px;
+    }
+
+    /*==================== ABOUT SECTION ====================*/
+    .about-content{
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    .div-outside-layer{
+        opacity: 0.9;
+        width: 60%;
+    }
+
+    .inside-layer{
+        width: 80%;
+        top: 50px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+    }
+
+    .inside-layer h1,
+    .inside-layer p{
+        width: 100%;
+        font-size: 0.84rem;
+        margin: 0;
+        padding: 10px ;
+    }
+
+    /*==================== PORTFOLIO SECTION ====================*/
+    .position{
+        position: relative;
+        height: 100%;
+        width: 40%;
+        top: 20%;
+        left: 0;
+    }
+
+    .slider{
+        width: 450px;
+        height: 500px;
+    }
+
+    .slide img{
+        width: 600px;
+        height: 500px;
+        object-fit: cover;  
+    }
+
+    .navbar-man{
+        position: absolute;
+        width: 500px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manl-btn{
+        background-color: grey;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+        opacity: 0.8;
+    }
+
+
+    /*==================== TESTIMONIAL SECTION ====================*/
+     .organize-container{
+         position: relative;
+         left: 2px;
+     }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .img{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .card{
+        background-color: #C4C4C4;
+        text-align: center;
+        padding: 0.3rem;
+        border-radius: 5%;
+    }
+
+    .card-1 i,
+    .card-2 i,
+    .card-3 i{
+        font-size: 8px;
+        margin-bottom: 10px;
+        color: #111;
+    }
+
+    .name{
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+    .refs{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .job{
+        text-transform: uppercase;
+        opacity: 0.8;
+        font-size: 12px;
+        font-weight: 900;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    /*==================== SERVICES SECTION ====================*/
+
+    .container .card{
+        position: relative;
+        width: 90px;
+        height: 90px;
+        margin: 5px;
+    }  
+
+    .container .card .contentBx .content h3{
+        font-size: .7rem;
+    }
+
+    .container .card .contentBx .content a{
+        font-size: 0.6rem;
+        margin-left: -8%;
+    }
+
+}
+
+@media (max-width: 390px){
+    /*==================== HOME SECTION ====================*/
+    .home-img{
+        width: 100%;
+        height: 80%;
+    }
+
+    .text{
+        left: 5%;
+    }
+    .txt-content h2{
+        font-size: 0.9rem;
+    }
+
+    .txt-content h4{
+        text-align: center;
+        font-size: 0.53rem;
+        letter-spacing: 10px;
+    }
+
+    .down-btn{
+        bottom: 15%;
+    }
+
+    /*==================== ABOUT SECTION ====================*/
+    .about-content{
+        width: 80%;
+        height: 80%;
+        flex: start;
+    }
+
+    .div-img{
+        width: 100%;
+        height: 30%;
+
+    }
+
+    .div-img img{
+        width: 60%;
+    }
+
+    .div-outside-layer{
+        opacity: 0.9;
+        width: 70%;
+        margin-left: 150px;
+    }
+
+    .inside-layer{
+        width: 90%;
+        height: 80%;
+        top: 30px;
+        left: 10px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+    }
+
+    .inside-layer h1,
+    .inside-layer p{
+        width: 100%;
+        font-size: 0.84rem;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .outside-layer-style{
+        display: none;
+    }
+
+    /*==================== PORTFOLIO SECTION ====================*/
+    .position{
+        position: relative;
+        height: 100%;
+        width: 20%;
+        top: 20%;
+        left: 0;
+    }
+
+    .slider{
+        width: 380px;
+        height: 500px;
+    }
+
+    .slide img{
+        width: 400px;
+        height: 500px;
+        object-fit: cover;  
+    }
+
+    .navbar-man{
+        position: absolute;
+        width: 400px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manl-btn{
+        background-color: grey;
+        padding: 8px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+        opacity: 0.8;
+    }
+
+    /*==================== TESTIMONIAL SECTION ====================*/
+     .organize-container{
+         position: relative;
+         left: -30%;
+     }
+
+    .tcontainer{
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+
+    .img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .tcard{
+        background-color: #C4C4C4;
+        text-align: center;
+        padding: 0.1rem;
+        border-radius: 5%;
+    }
+
+    .card-1 i,
+    .card-2 i,
+    .card-3 i{
+        font-size: 8px;
+        margin-bottom: 10px;
+        color: #111;
+    }
+
+    .card-1 p,
+    .card-2 p,
+    .card-3 p{
+        font-size: .4rem;
+        margin-bottom: 10px;
+        color: #111;
+    }
+
+    .name{
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+    .refs{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .job{
+        text-transform: uppercase;
+        opacity: 0.8;
+        font-size: 8px;
+        font-weight: 900;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 250px){
+    /*==================== HOME SECTION ====================*/
+    .home-img{
+        width: 100%;
+        height: 80%;
+    }
+
+    .text{
+        left: 5%;
+    }
+    .txt-content h2{
+        font-size: 0.9rem;
+    }
+
+    .txt-content h4{
+        text-align: center;
+        font-size: 0.53rem;
+        letter-spacing: 10px;
+    }
+
+    .down-btn{
+        width: 50px;
+        height: 50px;
+        bottom: 15%;
+    }
+
+    .down-btn img{
+        width: 30px;
+        height: 30px;
+    }
+
+    /*==================== ABOUT SECTION ====================*/
+    .about-content{
+        display: grid;
+        width: 100%;
+        height: 80%;
+    }
+
+    .div-img{
+       width: 250px;
+       height: 450px;
+       margin-left: 60px;
+       flex: start;
+    }
+
+    .div-outside-layer{
+        opacity: 0.9;
+        width: 50%;
+        top: -80%;
+        margin-left: 80px;
+    }
+
+    .inside-layer{
+        width: 80%;
+        top: 50px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+    }
+
+    .inside-layer h1,
+    .inside-layer p{
+        width: 100%;
+        font-size: 0.58rem;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .outside-layer-style{
+        display: none;
+    }
+
+
+}
